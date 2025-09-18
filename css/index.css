@@ -1,5 +1,65 @@
+
+sCSS
+/* General Body Styles */
+
+body{
+    background-color: rgb(192, 207, 255);
+    color: gray;
+    font-family: "cossette-titre", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 20px;
+
+}
+/* Headings */
+
+h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:black;
+
+}
+h2 {
+    font-size: 24px;
+    color: #333333;
+}
+/* Sections */
+
+section {
+    margin: 20px 0;
+    padding: 10px;
+
+}
+
+/*Experience list items */
+#experience ul li {
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+/* Connect Links */
+#connect a {
+    color: #1a73e8;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #1a73e8;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+#connect a:hover {
+    background-color: #1a73e8;
+    color: white;
+
+}
+/* About section alignment example */
+#about {
+    text-align: center;
+}
 body {
   background-color: lightskyblue;
   color: gray;
   font-family: Arial, sans-serif;
 }
+
