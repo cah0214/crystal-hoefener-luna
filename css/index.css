@@ -1,6 +1,39 @@
 
 sCSS
+
 /* General Body Styles */
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+/* Navigstion list */
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation links */
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: lightgray;
+    border-radius: 5px;
+}
 
 body{
     background-color: rgb(192, 207, 255);
@@ -11,6 +44,17 @@ body{
     padding: 20px;
 
 }
+
+nav {
+    /*styles will go here*/
+}
+ nav ul {
+    /*styles for the list of links */
+ }
+ nav ul li a {
+    /*styles for each link */
+ }
+
 /* Headings */
 
 h1 {
@@ -38,6 +82,12 @@ section {
     padding: 10px;
     margin: 5px 0;
     border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    list-style-type: none;
 }
 /* Connect Links */
 #connect a {
@@ -57,9 +107,3 @@ section {
 #about {
     text-align: center;
 }
-body {
-  background-color: lightskyblue;
-  color: gray;
-  font-family: Arial, sans-serif;
-}
-
