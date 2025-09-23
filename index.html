@@ -1,68 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-  body { background-color: rgb(40, 58, 141); }
-</style>
     <meta charset="UTF-8">
-    <meta name="description" content="All about Me">
-    <title>Crystal's Webpage</title>
-    <link rel="stylesheet" href="css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
-
 <body>
-   <nav>
-    <ul> 
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="projects">Projects</a></li>
-        <li><a href="connect">Connect</a></li>
-    </ul>
-   </nav> 
 
-   <!-- Name --> 
-    <h1>Crystal Hoefener</h1>
 
-    <!--About Section-->
-<section id="about">
-    <p>My name is Crystal, I have a background in Logistics and Inventory Control Managment. I have been with Target for 4 years now.
-    </p>
+    <nav class="navbar">
 
-</section>     
+         <!-- href an address to go somewhere- inside a project or outside
+        #connect stands for id="connect" look on line 67 - that is why when you click it, it takes you to the footer, your about and skills is doing the same. You cant tell because there is really no place for the screen to move.
+        This line of code is what is called nested. Meaning you put and element inside of another one like a russian staking doll. This allows us to keep it in the list items with the rest and be a clickable link by using the anchor tag <a></a>
+        href, download, target, id are all called attribute. They allow us to do extra stuff with the html tag. href as you just learned allows us to go to an address or navigate to the correct place.  download, is the action we want them to be able to choose when they click this link.  You can name it anything you want, but its important to keep the document a pdf. target opens up a new tab. So that way they dont have to hit the back button to go back to your project. id is how we idenified it to use in css. Again #resume stands for id='resume'. 
 
-    <!--Experience Section-->
-<section id="experience">
-    <h2>Experience</h2>
-    <ul>
-        <li>Inventory Control Quality Assurance</li>
-        <li>Training Specialist</li>
-    </ul>
-</section>
+        <li>
+            <a href="./assets/Resume.pdf" download="Crystal Hoefener.pdf" target="_blank" id="resume">Experience</a>
+        </li>  -->
 
-    <!--Skills Section-->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Inventory Control Management</li>
-            <li>Inventory Audits</li>
-            <li>Problem Solver</li>
+
+    
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="./assets/Resume.pdf" download="Crystal Hoefener.pdf" target="_blank" id="resume">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="./html/projects.html">Projects</a></li>
+            <li><a href="#connect">Connect</a></li>
         </ul>
-    </section>
+      
+      </nav>
 
-    <!--Projects Section-->
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul></ul>
-    </section>
+      <!-- This is kind of a repeat, <img is your html element and src and alt and id are all attributes. As I told you before id is a way we can identify this specific img. src is much like href it stand for sorce and it takes you to an address. alt is for when the picture does not load correctly for any reason. And you see that little img icon and it will Display Self Portrait there. Its a way to describe a img if the user can not see it for any reason.
 
-    <!--Connect Section-->
-<section id="connect">
-    <h2>Connect</h2>
-    <ul>
-        <li><a href="https://github.com/cah0214" target="_blank">GitHub</a></li>
-    </ul>
-</section>
+     <img src="./assets/image4.jpeg" alt="Self Portrait" id="img1"> -->
+
+    
+   
+       <div class="section" id="about">  
+         <h1 id="title">Crystal Hoefener's Portfolio</h1>
+        <img src="./assets/image4.jpeg" alt="Self Portrait" id="img1">
+        <h4>Hello! My name is Crystal, and I'm a mother, a student, and a proud dog mom to my best friend, Kane. My journey has taken me from the fast-paced world of logistics to the compassionate field of health sciences, but I've recently discovered a new and exciting passion: coding.
+
+            I am currently a student at Excelsior University, where I'm working towards my Associate's degree in Health Sciences. I've also embarked on an incredible new adventure with Code the Dream, where I'm learning to code from the ground up. This website is my very first personal portfolio, where I hope to bridge the two worlds I'm passionate about: the analytical problem-solving of logistics and the creative logic of coding.
+            
+            This space is for me to share my progress, showcase my growing skills, and demonstrate that a passion for learning has no limits. It's a testament to the idea that with hard work and dedication, you can build a new path, no matter where you start.
+        </h4></div>
+
+
+    <div class="container">
+       
+        <div class="section" id="about">   <h2>Skills</h2>
+            <ul>
+                <li>Inventory Control Management</li>
+                <li>Inventory Audits</li>
+                <li>Problem Solver</li>
+                <li>GitHub</li>
+                <li>VS Code</li>
+                <li>Manhattan Software</li>
+                <li>Process Improvment</li>
+                <li> SCI Software</li>
+            </ul>
+        
+        </div>
+
+
+        <div class="section" >Section 3  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptas repellat molestiae maiores eveniet doloribus. Tempore ab quia ea dolorum maxime provident unde, dicta sapiente in aliquam laboriosam rem quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus alias laudantium perferendis autem, fuga, et dolores quas eos aperiam quam incidunt atque vel molestiae, eveniet placeat aliquid ratione maiores nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque porro ipsa laborum sint autem aliquid velit consectetur! Veritatis nobis, sunt repudiandae maxime odio natus reiciendis iure eos aliquid enim deserunt.</div>
+
+        <div class="section" >Section 4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolorem deserunt placeat, illum dolores suscipit consequatur neque quam ut molestias laboriosam minus officia harum delectus rem est! Doloremque, mollitia possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla laboriosam sunt praesentium sed ea fuga placeat similique soluta quia, a qui! Omnis fugit quo quis beatae atque earum impedit modi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, laborum labore magni sequi repellendus perferendis similique corporis, ipsum animi minima quasi repellat aperiam numquam. Dicta repellendus exercitationem ipsam libero? Similique.</div>
+      </div>
+
+
+      <footer id="connect">
+        <div class="footer-section left">
+          <a href="mailto:crystal061410@gmail.com" target="_blank">
+            <i class="fa fa-envelope"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/crystal-hoefener-1b1114114/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/cah0214">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <div class="footer-section middle" >
+            <a href="./assets/Resume.pdf" download="Crystal Hoefener.pdf" target="_blank" id="resume">
+                Download Resume
+              </a>
+        </div>
+        <div class="footer-section right">
+          <div class="location-info">
+            <img src="./assets/locationImg.png" alt="Location Map" class="location-map-img">
+            <p>
+                Greenwood, IN</p>
+          </div>
+         
+        </div>
+      </footer>
 
 
 </body>
