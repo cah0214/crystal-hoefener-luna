@@ -18,7 +18,7 @@ footer.appendChild(copyright)
 var skillsSection = document.getElementById("skills")
 
 var skills = ["JavaScript", "HTML", "CSS", "Adobe Photoshop", "GitHub",
-    "Inventory Control Management", "Inventory Audits", "Problem Solver",  "VS Code", "Manhattan Software", "Process Improvment", "SCI Software"
+    "Inventory Control Management", "Inventory Audits", "Problem Solver",  "VS Code", "Manhattan Software", "Process Improvment", "SCI Software", "Greenfield", "Git" 
     ] 
 
 
