@@ -1,0 +1,288 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+ 
+    background-color: #800020;
+    font-family: fantasy;
+  }
+  
+  h2 {
+    padding-bottom: 1em;
+    
+    color: #36454F;
+  }
+  
+  /* --- Nav Bar --- */
+  
+  nav {
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    color: white;
+    padding: 1rem 2rem;
+    text-shadow: black 2px 2px 2px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 0 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #ddd;
+  }
+  
+  #resume {
+    color: white;
+
+  }
+  
+  /* --- Main Content Container & Sections --- */
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    color: black;
+  
+  }
+  
+  .section {
+    flex: 1 1 200px;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(236, 225, 204);
+    /* Default: Warm Burgundy */
+    border: 2px solid #800020;
+    text-align: center;
+  }
+
+  /* border-radius is making the picture of me round
+   */
+  #img1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  /* The display inline-block makes the li going straight across */
+
+  ul li {
+    display: inline-block;
+    margin-right: 10px;
+    list-style-type: none;
+  }
+  
+  /* --- Footer / Connect Section --- */
+  
+  #connect {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* A dark color that works across palettes */
+    background-color: #2c3e50;
+    padding: 20px 50px;
+    color: #ecf0f1;
+  }
+  
+  .footer-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-section.left a {
+    color: #ecf0f1;
+    font-size: 24px;
+    margin-right: 15px;
+  }
+  
+
+  .footer-section.right {
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+  }
+  
+  .location-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .location-map-img {
+    width: 50px;
+    
+    height: auto;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+
+  .location-info p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+
+  
+  .location-info .fa-map-marker-alt {
+    display: none;
+  }
+
+  /* Projects page
+ Hides the cropped parts of the image
+  */
+  #comingSoon{
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  #comingSoon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+
+/*   
+How its viewed on different devices */
+  
+  /* Blue & Gray for tablets */
+  @media (max-width: 768px) {
+    body {
+      background-color: #4a4a4a;
+    }
+    .container {
+      color: #003366;
+    }
+    .section {
+      flex-basis: 100%;
+      border-color: #003366;
+    }
+    h2 {
+      color: #003366;
+    }
+   
+    #connect {
+      background-color: #4a4a4a;
+    }
+    .footer-section {
+      margin-bottom: 20px;
+    }
+    .footer-section.left,
+    .footer-section.middle {
+      justify-content: center;
+    }
+    .footer-section.right {
+      align-items: center;
+      text-align: center;
+    }
+    .footer-links {
+      justify-content: center;
+    }
+  }
+
+    /*==== Leave a Message Form ====*/
+    #leave_message_section {
+      width: 90%;
+      background-color: tan;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 30px;
+      margin: 40px auto;
+      max-width: 600px;
+      box-sizing: border-box;
+    }
+
+    #leave_message_section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #leave_message_section form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    #leave_message_section label {
+      font-weight: 600;
+      color: #2c3e50;
+    }
+
+    #leave_message_section input:focus,
+    #leave_message_section textarea:focus {
+      outline: none;
+      border-color: #800020;
+      box-shadow: 0 0 5px rgba(128, 0, 32, 0.5);
+    }
+    #leave_message_section button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background-color: #800020;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    #leave_message_section button:hover {
+      background-color: #5a0017;
+    }
+  
+  /* Modern Teal & Black for phones */
+  @media (max-width: 480px) {
+    body {
+      background-color: #008080;
+    }
+    .container {
+      color: #000000;
+    }
+    .section {
+      border-color: #000000;
+    }
+    h2 {
+      color: #000000;
+    }
+
+    #connect {
+      background-color: #000000;
+    }
+
+  
+  }
