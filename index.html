@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- test edit -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crystal Portfolio</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
@@ -28,7 +30,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="./assets/Resume.pdf" download="Crystal Hoefener.pdf" target="_blank" id="resume">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="./html/projects.html">Projects</a></li>
+            <li><a href="./assets/vecteezy_coming-soon-background-illustration-template-design_.jpg">Projects</a></li>
             <li><a href="#connect">Connect</a></li>
         </ul>
       
@@ -48,13 +50,15 @@
             I am currently a student at Excelsior University, where I'm working towards my Associate's degree in Health Sciences. I've also embarked on an incredible new adventure with Code the Dream, where I'm learning to code from the ground up. This website is my very first personal portfolio, where I hope to bridge the two worlds I'm passionate about: the analytical problem-solving of logistics and the creative logic of coding.
             
             This space is for me to share my progress, showcase my growing skills, and demonstrate that a passion for learning has no limits. It's a testament to the idea that with hard work and dedication, you can build a new path, no matter where you start.
-        </h4></div>
+        </h4>
+      </div>
 
 
     <div class="container">
        
-        <div class="section" id="about">   <h2>Skills</h2>
-            <ul>
+        <div class="section" id="skills">   
+          <h2>Skills</h2>
+            <ul id="skillsList">
                 <li>Inventory Control Management</li>
                 <li>Inventory Audits</li>
                 <li>Problem Solver</li>
@@ -64,7 +68,8 @@
                 <li>Process Improvment</li>
                 <li> SCI Software</li>
             </ul>
-        
+
+        </div>
         </div>
 
 
@@ -72,6 +77,30 @@
 
         <div class="section" >Section 4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolorem deserunt placeat, illum dolores suscipit consequatur neque quam ut molestias laboriosam minus officia harum delectus rem est! Doloremque, mollitia possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla laboriosam sunt praesentium sed ea fuga placeat similique soluta quia, a qui! Omnis fugit quo quis beatae atque earum impedit modi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, laborum labore magni sequi repellendus perferendis similique corporis, ipsum animi minima quasi repellat aperiam numquam. Dicta repellendus exercitationem ipsam libero? Similique.</div>
       </div>
+
+      <!--Message Form Section-->
+      <section id="leave_message_section">
+        <h2>Leave Me a Message!</h2>
+
+        <form name="leave_message">
+          <label for="usersName">Name:</label>
+          <input type="text" id="usersName" name="usersName" required>
+
+          <label for="usersEmail">Email:</label>
+          <input type="email" id="usersEmail" name="usersEmail" required>
+
+          <label for="usersMessage">Message:</label>
+          <textarea id="usersMessage"  name="usersMessage" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <!--Message List Section-->
+      <section id="messages">
+        <h2>Messages</h2>
+        <ul></ul>
+      </section>
 
 
       <footer id="connect">
@@ -100,7 +129,6 @@
          
         </div>
       </footer>
-
-
-</body>
+      <script src="js/index.js"></script>
+    </body>
 </html>
