@@ -74,3 +74,22 @@ messageForm.addEventListener("submit", function(event) {
     
     messageForm.reset();
 });
+
+fetch("https://api.github.com/users/cah0214/repos")
+	.then(response => response.json())
+	.then(repositories => {
+		console.log(repositories);
+		const projecSection = document.getElementById("projects");
+		const projectList = projecSection.querySelector("#project-list");
+		
+		for (let i = 0; i < repositories.length; i++) {
+			const repo = repositories[i];
+			
+			const project = document.createElement("li");
+			project.innerText = repo["name"];
+			projectList.appendChild(project);
+		}
+	})
+	.catch(error => { 
+		console.error('Error fetching repositories:', error);	
+});
