@@ -284,5 +284,80 @@ How its viewed on different devices */
       background-color: #000000;
     }
 
+    /* ===== Highlights Section ===== */
+#highlights {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.highlight-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.dog-photo, .work-gallery {
+  background-color: #f6efe7;
+  border: 2px solid #800020;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  margin: auto;
+}
+
+.dog-photo:hover, .work-gallery:hover {
+  transform: translateY(-5px);
+}
+
+.dog-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.dog-img:hover {
+  transform: scale(1.05);
+}
+
+.work-gallery ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.work-gallery a {
+  color: #800020;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.work-gallery a:hover {
+  color: #5a0017;
+  text-decoration: underline;
+}
+
+/* Mobile-Friendly Layout */
+@media (max-width: 768px) {
+  .highlight-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dog-photo, .work-gallery {
+    width: 90%;
+  }
+}
+
+
   
   }
